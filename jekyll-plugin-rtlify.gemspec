@@ -11,8 +11,8 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/woforo/jekyll-plugin-rtlify"
   spec.license       = "MIT"
 
-  s.files            = `git ls-files`.split($INPUT_RECORD_SEPARATOR).grep(%r{^lib/})
-  s.extra_rdoc_files = ['README.md', 'LICENSE']
+  spec.files         = `git ls-files`.split($INPUT_RECORD_SEPARATOR).grep(%r{^lib/})
+  spec.extra_rdoc_files = ['README.md', 'LICENSE']
 
   spec.add_runtime_dependency "jekyll", "~> 3.3"
 
