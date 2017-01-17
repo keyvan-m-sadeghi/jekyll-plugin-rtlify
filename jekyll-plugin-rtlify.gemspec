@@ -3,7 +3,7 @@ require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-plugin-rtlify"
-  spec.version       = "0.1.3"
+  spec.version       = "0.1.4"
   spec.authors       = ["Keyvan Mir Mohammad Sadeghi"]
   spec.email         = ["keyvan.m.sadeghi@gmail.com"]
 
