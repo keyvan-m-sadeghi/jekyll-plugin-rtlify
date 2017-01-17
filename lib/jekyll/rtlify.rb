@@ -15,7 +15,7 @@ module Jekyll
     def render(context)
       html = context.find_variable(@variable)
       tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'ul']
-      tags.each { |tag| html = html.gsub(/<#{tag}\s/, "<#{tag} dir=\"auto\"")}
+      tags.each { |tag| html = html.gsub(/<#{tag}\s/, "<#{tag} dir=\"auto\" ")}
       html
     end
 
