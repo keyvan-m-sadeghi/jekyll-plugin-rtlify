@@ -1,8 +1,9 @@
 # coding: utf-8
+require 'rake'
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-plugin-rtlify"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.2"
   spec.authors       = ["Keyvan Mir Mohammad Sadeghi"]
   spec.email         = ["keyvan.m.sadeghi@gmail.com"]
 
@@ -10,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/woforo/jekyll-plugin-rtlify"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
+  spec.files         = `git ls-files`.split("\n")
 
   spec.add_runtime_dependency "jekyll", "~> 3.3"
 
