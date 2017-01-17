@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 module Jekyll
   class RTLifyTag < Liquid::Tag
 
@@ -16,6 +18,7 @@ module Jekyll
       tags.each { |tag| html = html.gsub(/<#{tag}/, "<#{tag} dir=\"auto\"")}
       html
     end
+
   end
 end
 
